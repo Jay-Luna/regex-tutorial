@@ -1,6 +1,6 @@
 # Validating a Phone Number
 
-/^\d{3}-\d{3}-\d{4}$/
+`/^\d{3}-\d{3}-\d{4}$/`
 
 ## Summary
 
@@ -25,26 +25,26 @@ XXX-XXX-XXXX
 
 ## Regex Components
 
-In the regular expression /^\d{3}-\d{3}-\d{4}$/, we will describe each of the components:
+In the regular expression `/^\d{3}-\d{3}-\d{4}$/`, we will describe each of the components:
 
-/ - The forward slash / at the beginning and end of the regular expression pattern signals that it is a regular expression literal. 
+`/` - The forward slash / at the beginning and end of the regular expression pattern signals that it is a regular expression literal. 
 
-    **note** :In JavaScript, regular expressions can be defined with or without the forward slashes (/).
+   <strong>note</strong>: In JavaScript, regular expressions can be defined with or without the forward slashes (/).
 If you are using the regular expression in a RegExp object, you would use the forward slashes as delimiter. However, if you are using the regular expression as a method parameter or within string methods, then it's not needed.
 
-^ - The caret symbol indicates the start of the string. It ensures that the entire string matches the following pattern.
+`^` - The caret symbol indicates the start of the string. It ensures that the entire string matches the following pattern.
 
-\d{3} - This specifies exactly three digits. \d represents any digit from 0 to 9.
+`\d{3}` - This specifies exactly three digits. \d represents any digit from 0 to 9.
 
-- - This matches a hyphen character.
+`-` - This matches a hyphen character.
 
-\d{3} - This again specifies another three digits.
+`\d{3}` - This again specifies another three digits.
 
-- - This matches another hyphen character.
+`-` - This matches another hyphen character.
 
-\d{4} - This specifies four digits.
+`\d{4}` - This specifies four digits.
 
-$ - The dollar sign represents the end of the string. It ensures that nothing comes after the specified pattern.
+`$` - The dollar sign represents the end of the string. It ensures that nothing comes after the specified pattern.
 
 Therefore, the regular expression `/^\d{3}-\d{3}-\d{4}$/ matches phone numbers in the format "XXX-XXX-XXXX" exactly, where X represents any digit from 0 to 9.
 
@@ -52,8 +52,8 @@ Therefore, the regular expression `/^\d{3}-\d{3}-\d{4}$/ matches phone numbers i
 
 Anchors are special characters used to specify the position of a match within a string. In this regex example, there are 2 anchors being used.
 
-^ - The caret symbol (^) represents the start of the string anchor. It ensures that the pattern match must occur at the very beginning of the string.
+`^` - The caret symbol (^) represents the start of the string anchor. It ensures that the pattern match must occur at the very beginning of the string.
 
-$ - The dollar sign represents the end of the string anchor. It ensures that the pattern match must occur at the very end of the string.
+`$` - The dollar sign represents the end of the string anchor. It ensures that the pattern match must occur at the very end of the string.
 
 By using these anchors, the regex enforces that the entire string must match the specified pattern from start to end, without allowing any additional characters or spaces before or after the phone number.
