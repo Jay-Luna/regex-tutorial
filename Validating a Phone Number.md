@@ -60,9 +60,13 @@ By using these anchors, the regex enforces that the entire string must match the
 
 `{3}` - This quantifier specifies that the preceding element, `\d` (which represents a digit), should occur exactly 3 times. So, `\d{3}` matches exactly three digits in a row.
 
+example: \d{3} is the same as \d\d\d
+
 `-`- This matches a hyphen character literally.
 
 `{4}` - This quantifier specifies that the preceding element, \d (a digit), & should occur exactly 4 times. So, `\d{4}` matches exactly four digits in a row.
+
+example: \d{4} is the same as \d\d\d\d
 
 The quantifiers `{3}` and `{4}` are used to define the specific number of occurrences of digits in the regex pattern. In this case, it enforces the pattern of three digits from 0-9, followed by a hyphen, followed by another three digits from 0-9, and finally, another hyphen and four more digits from 0-9. 
 
