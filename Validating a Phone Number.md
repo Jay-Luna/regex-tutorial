@@ -79,5 +79,5 @@ not accepted: 5@1-09A-BBC!
 
 ### Character Classes
 
-`\d` - Matches any digit from 0 to 9.
+`\d` - Matches any digit from 0 to 9. <br>
 `-` - Matches a hyphen (-)
