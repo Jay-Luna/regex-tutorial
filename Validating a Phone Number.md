@@ -77,3 +77,17 @@ not accepted: 5@1-09A-BBC!
 
 `\d` - Matches any digit from 0 to 9. <br>
 `-` - Matches a hyphen (-)
+
+### Grouping and Capturing
+
+This specific regex example is using the pattern repetition syntax {} to specify the number of occurrences for each part of the pattern. The \d{3} matches exactly three digits, followed by a hyphen (-), and then another \d{3} matches three more digits, followed by another hyphen (-), and lastly, \d{4} matches four digits.
+
+
+### References
+
+- [Regex Youtube Tutorial](https://www.youtube.com/watch?v=7DG3kCDx53c)
+
+
+## Author
+
+Jeah is a student at the University of California San Diego studying how to become a full stack developer.
